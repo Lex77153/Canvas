@@ -1,0 +1,122 @@
+body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #D32F2F;
+            font-family: Arial, sans-serif;
+        }
+        .sa{
+          position: absolute;
+          transform: translate(-105px, 10px);
+        }
+        .a1{
+          color: white;
+          font-size: 15px;
+          position: absolute;
+          transform: translate(-155px,5px);
+        }
+        .a2{
+          color: white;
+          font-size: 15px;
+          position: absolute;
+          transform: translate(101px,5px);
+        }
+        .bot{
+          cursor: pointer;
+          font-size: 22px;
+          border: 2px solid white;
+          color: white;
+          background-color: #262626;
+          position: absolute;
+          transform: translate(80px, 87px);
+          width: 160px;
+          height: 47px;
+          border-radius: 4px;
+        }
+        .dd{
+          color: white;
+          font-size: 21px;
+          position: absolute;
+          transform: translate(-241px, 139px);;
+
+        }
+        .checkbox{
+          position: absolute;
+          transform: translate(-245px, 137px);
+          width: 17px;
+          height: 17px;
+
+        }
+        .chek{
+          position: absolute;
+          transform: translate(-215px, 139px);
+          color: white;
+          font-size: 20px;
+        }
+        .pass{
+          position: absolute;
+          transform: translate(-240px, 70px);
+          width: 475px;
+          height: 48px;
+          border-radius: 4px;
+          outline: none;
+          transition: border-color 0.5s ease;
+        }
+        .lpass{
+          font-weight: bold;
+          font-size: 21px;
+          position: absolute;
+          transform: translate(25px, -10px);
+          color: white;
+          user-select: none;
+        }
+        .login{
+          position: absolute;
+          transform: translate(-240px, -45px);
+          width: 475px;
+          height: 48px;
+          border-radius: 4px;
+          outline: none;
+          transition: border-color 0.5s ease;
+        }
+        input:focus {
+        border:2.14px solid blue;
+        }
+        .llogin{
+          font-weight: bold;
+          margin-top: 76px;
+          margin-right: 325px;
+          font-size: 21px;
+          color: white;
+          user-select: none;
+        }
+        .gg{
+          font-size: 17px;
+          color: white;
+          margin-left:390px;
+          margin-top: -55px;
+        }
+        .icon{
+          margin-top: 28px;
+          margin-left: 25px;
+          width: 37px;
+          height: 37px;
+        }
+
+        .fa {
+          border: 3px solid #b21815;
+          height: 500px;
+          width: 540px auto;
+          border-radius: 8px;
+        }
+        .auth-box {
+            height: 628px;
+            width: 535px; /* Ширина блока */
+            margin: -13em auto 2em ;
+            padding: 20px; /* Внутренние отступы */
+            background-color: #262626; /* Черный фон */
+            border-radius: 8px; /* Закругленные углы */
+            text-align: center;
+        }
